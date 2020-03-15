@@ -20,17 +20,20 @@ namespace JsonFieldEncrypter.Tools.Tests
                 .Returns(It.IsAny<IConfigurationSection>());
         }
 
+        //todo: better service registration test
         [Fact]
         public void AddEncryption_ShouldRegisterServices()
         {
             IServiceCollection serviceCollection = new ServiceCollection();
 
             serviceCollection.AddEncryption(configuration.Object);
-
-            var encryptionService = serviceCollection.First(x => 
+            var encryptionService = serviceCollection.First(x =>
                 x.ServiceType == typeof(IEncryptionService));
-            
-            var options = serviceCollection.First(x => 
+
+            var fileTextProvider = serviceCollection.First(x =>
+                x.ServiceType == typeof(IFileTextProvider));
+
+            var options = serviceCollection.First(x =>
                 x.ServiceType == typeof(IConfigureOptions<EncryptionServiceOptions>));
         }
     }

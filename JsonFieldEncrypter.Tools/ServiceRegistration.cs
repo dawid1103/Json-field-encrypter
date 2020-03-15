@@ -8,7 +8,8 @@ namespace JsonFieldEncrypter.Tools
         public static void AddEncryption(this IServiceCollection services, IConfiguration configuration)
         {
             services.AddScoped<IEncryptionService, EncryptionService>();
-            services.Configure<EncryptionServiceOptions>(options => configuration.GetSection(nameof(EncryptionServiceOptions)));
+            services.AddScoped<IFileTextProvider, FileTextProvider>();
+            services.Configure<EncryptionServiceOptions>(options => configuration.GetSection(nameof(EncryptionServiceOptions)).Bind(options));
         }
     }
 }
