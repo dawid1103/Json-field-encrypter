@@ -12,10 +12,11 @@ namespace JsonFieldEncrypter
         {
             if (args.Length < 3)
             {
-                Console.WriteLine("JsonFieldEncrypter.exe file/path.json key/file.txt foo.bar.password");
+                Console.WriteLine("JsonFieldEncrypter.exe appsettings.json key/file.txt foo.bar.password");
             }
 
-            string text = File.ReadAllText(args[0]);
+            string file = args[0];
+            string text = File.ReadAllText(file);
             string encriptionKey = File.ReadAllText(args[1]);
             string jsonPath = args[2];
 
@@ -27,7 +28,7 @@ namespace JsonFieldEncrypter
             string encryptedValue = Encrypter.Encrypt(value, encriptionKey);
 
             valueToken.Replace(encryptedValue);
-            File.WriteAllText(args[0], obj.ToString(Formatting.Indented));
+            File.WriteAllText(file, obj.ToString(Formatting.Indented));
         }
     }
 }
