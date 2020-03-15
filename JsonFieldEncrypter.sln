@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JsonFieldEncrypter", "JsonFieldEncrypter\JsonFieldEncrypter.csproj", "{6CB01A87-5F34-438F-B1DB-5DBB51E1229A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JsonFieldEncrypter.Tools", "JsonFieldEncrypter.Tools\JsonFieldEncrypter.Tools.csproj", "{8ABE70E2-3D4B-4347-BB43-67E989DE7834}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JsonFieldEncrypter.Tools.Tests", "JsonFieldEncrypter.Tools.Tests\JsonFieldEncrypter.Tools.Tests.csproj", "{0100DCB8-F401-4FFF-AFC4-B3AE27664452}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6CB01A87-5F34-438F-B1DB-5DBB51E1229A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CB01A87-5F34-438F-B1DB-5DBB51E1229A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CB01A87-5F34-438F-B1DB-5DBB51E1229A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CB01A87-5F34-438F-B1DB-5DBB51E1229A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8ABE70E2-3D4B-4347-BB43-67E989DE7834}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8ABE70E2-3D4B-4347-BB43-67E989DE7834}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8ABE70E2-3D4B-4347-BB43-67E989DE7834}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8ABE70E2-3D4B-4347-BB43-67E989DE7834}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0100DCB8-F401-4FFF-AFC4-B3AE27664452}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0100DCB8-F401-4FFF-AFC4-B3AE27664452}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0100DCB8-F401-4FFF-AFC4-B3AE27664452}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0100DCB8-F401-4FFF-AFC4-B3AE27664452}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
